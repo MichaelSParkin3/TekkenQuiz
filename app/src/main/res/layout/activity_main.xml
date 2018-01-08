@@ -1,0 +1,152 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#212121">
+
+        <TextView
+            style="@style/Questions"
+            android:text="Do you have daddy issues?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/daddy">
+            <RadioButton
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                tools:ignore="DuplicateIds"
+                style="@style/radioButtonStyle"/>
+            <RadioButton
+                android:id="@+id/noDaddy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Questions"
+            android:text="Which color do you like best?"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/color">
+            <RadioButton
+                android:id="@+id/paul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="Red"/>
+            <RadioButton
+                android:id="@+id/kazuya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="Black"/>
+            <RadioButton
+                android:id="@+id/heihachi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="White"/>
+            <RadioButton
+                android:id="@+id/king"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="Orange"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/Questions"
+            android:text="Choose one."/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/moves">
+            <RadioButton
+                android:id="@+id/kazuya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="Hell Sweep"
+                tools:ignore="DuplicateIds" />
+            <RadioButton
+                android:id="@+id/paul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="Death Fist"
+                tools:ignore="DuplicateIds" />
+            <RadioButton
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                style="@style/radioButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="Lightning!!!"
+                tools:ignore="DuplicateIds" />
+            <RadioButton
+                android:id="@+id/king"
+                android:layout_width="wrap_content"
+                style="@style/radioButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="Rolling Death Cradle"
+                tools:ignore="DuplicateIds" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/Questions"
+            android:text="Choose one."/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/country">
+            <RadioButton
+                android:id="@+id/paul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="America"
+                tools:ignore="DuplicateIds" />
+            <RadioButton
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                style="@style/radioButtonStyle"
+                android:layout_height="wrap_content"
+                android:text="Japan"
+                tools:ignore="DuplicateIds" />
+            <RadioButton
+                android:id="@+id/king"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioButtonStyle"
+                android:text="Mexico"
+                tools:ignore="DuplicateIds" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Quiz"
+            android:layout_margin="12dp"
+            android:background="#FFC107"
+            android:textColor="@android:color/white"
+            android:onClick="submitQuiz"/>
+
+    </LinearLayout>
+
+</ScrollView>
